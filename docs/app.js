@@ -22,14 +22,13 @@
 
   document.getElementById("yr").textContent = new Date().getFullYear();
 
-  document.getElementById("copyIp").onclick = async (e) => {
-    const n = document.getElementById("ipn").textContent;
-    try { await navigator.clipboard.writeText(n); } catch (err) {}
-    const b = e.currentTarget;
-    const old = b.innerHTML;
-    b.textContent = html.lang === "ar" ? "تم النسخ ✓" : "Copied ✓";
-    setTimeout(() => (b.innerHTML = old), 1600);
-  };
+  document.querySelectorAll(".copy").forEach((b) => {
+    b.onclick = async () => {
+      try { await navigator.clipboard.writeText(b.dataset.num); } catch (err) {}
+      b.textContent = html.lang === "ar" ? "تم ✓" : "Copied ✓";
+      setTimeout(() => (b.innerHTML = html.lang === "ar" ? b.dataset.ar : b.dataset.en), 1600);
+    };
+  });
 
   // newest public release → direct download links
   fetch("https://api.github.com/repos/iegy/smo/releases/latest")
