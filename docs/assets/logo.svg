@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E8D2"/>
+      <stop offset="1" stop-color="#DCCBA8"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2B24"/>
+      <stop offset="1" stop-color="#16170F"/>
+    </linearGradient>
+    <linearGradient id="ear" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9C7A4C"/>
+      <stop offset="1" stop-color="#B8925E"/>
+    </linearGradient>
+  </defs>
+  <!-- antenna -->
+  <rect x="490" y="96" width="44" height="130" rx="18" fill="#5F6A4E"/>
+  <circle cx="512" cy="96" r="62" fill="#E8772E"/>
+  <circle cx="494" cy="76" r="18" fill="#F6A46A" opacity=".8"/>
+  <!-- ears -->
+  <rect x="74" y="400" width="110" height="250" rx="44" fill="url(#ear)"/>
+  <rect x="840" y="400" width="110" height="250" rx="44" fill="url(#ear)"/>
+  <!-- head -->
+  <rect x="140" y="210" width="744" height="640" rx="150" fill="url(#head)"/>
+  <rect x="140" y="210" width="744" height="640" rx="150" fill="none" stroke="#C9B48C" stroke-width="10"/>
+  <!-- screen -->
+  <rect x="224" y="296" width="576" height="468" rx="96" fill="url(#screen)"/>
+  <!-- viewfinder corners -->
+  <g fill="none" stroke="#E8772E" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 440 V376 H364"/>
+    <path d="M724 440 V376 H660"/>
+    <path d="M300 620 V684 H364"/>
+    <path d="M724 620 V684 H660"/>
+  </g>
+  <!-- happy eyes -->
+  <g fill="none" stroke="#F3E8D2" stroke-width="34" stroke-linecap="round">
+    <path d="M392 540 q40 -56 80 0"/>
+    <path d="M552 540 q40 -56 80 0"/>
+  </g>
+  <circle cx="512" cy="612" r="14" fill="#E8772E"/>
+</svg>

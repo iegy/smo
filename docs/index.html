@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Screenmo — التقط · حرّر · شارك</title>
+  <meta name="description" content="Screenmo: أداة مجانية لالتقاط الشاشة وتسجيل الفيديو والتحرير بالعربي، مع استخراج النص وإخفاء البيانات الحساسة تلقائياً. Free Arabic-first screen capture, recording and annotation for Windows." />
+  <meta property="og:title" content="Screenmo — التقط · حرّر · شارك" />
+  <meta property="og:description" content="أداة التقاط وتسجيل وتحرير للشاشة، عربية من الأساس — مجاناً وبدون علامة مائية." />
+  <meta property="og:image" content="assets/editor.webp" />
+  <meta name="theme-color" content="#16170f" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="34" height="34" /><b>Screenmo</b></a>
+    <nav>
+      <a href="#features" data-en="Features">الخصائص</a>
+      <a href="#arabic" data-en="Arabic-first">عربي أولاً</a>
+      <a href="#compare" data-en="Compare">المقارنة</a>
+      <a href="#download" data-en="Download">التحميل</a>
+      <a href="#faq" data-en="FAQ">أسئلة</a>
+      <a href="#support" class="heart" data-en="Support us">ادعمنا</a>
+    </nav>
+    <button class="lang" id="lang" aria-label="Language">EN</button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="pill" data-en="Free · No watermark · Arabic + English">مجاني · بدون علامة مائية · عربي وإنجليزي</span>
+        <h1 data-en="Capture your screen. Edit it in Arabic. Share it in a second.">التقط شاشتك.<br />حرّرها بالعربي.<br /><span>وشاركها في ثانية.</span></h1>
+        <p data-en="Screenmo captures regions, windows, long scrolling pages, video and GIF — with a powerful editor that writes Arabic properly, reads text from images and hides sensitive data automatically.">
+          Screenmo بيلتقط أي جزء من الشاشة أو نافذة أو صفحة طويلة كاملة، ويسجّل فيديو و GIF — ومعاه محرر قوي بيكتب العربي صح، بيقرأ النص من الصور، وبيخفي البيانات الحساسة لوحده.
+        </p>
+        <div class="cta">
+          <a class="btn primary big" href="#download" id="heroDl">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.4 1.2L21 21v-8.4h-9.6zm0-15.4v7.2H21V3z"/></svg>
+            <span data-en="Download for Windows">تحميل لويندوز</span>
+          </a>
+          <a class="btn ghost big" href="#features" data-en="See all features">شوف كل الخصائص</a>
+        </div>
+        <div class="soon">
+          <span><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.8 1.3 10.3.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.2zM13.9 4.9c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg> macOS <em data-en="coming soon">قريباً</em></span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M17.6 9.5 19.4 6.4a.4.4 0 1 0-.7-.4l-1.8 3.2A11 11 0 0 0 12 8.2c-1.8 0-3.5.4-4.9 1L5.3 6a.4.4 0 1 0-.7.4l1.8 3.1A10 10 0 0 0 1 17.5h22a10 10 0 0 0-5.4-8zM7 14.8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg> Android <em data-en="coming soon">قريباً</em></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="shot main"><img src="assets/editor.webp" alt="Screenmo editor" /></div>
+        <div class="mo-float">
+          <svg viewBox="0 0 200 260" width="150" aria-label="Mo">
+            <rect x="96" y="10" width="8" height="26" rx="4" fill="#5F6A4E"/><circle cx="100" cy="12" r="10" fill="#E8772E"/>
+            <rect x="22" y="62" width="20" height="46" rx="8" fill="#A8834F"/><rect x="158" y="62" width="20" height="46" rx="8" fill="#A8834F"/>
+            <rect x="36" y="34" width="128" height="110" rx="26" fill="#EFE3CC" stroke="#CDB991" stroke-width="3"/>
+            <rect x="52" y="50" width="96" height="78" rx="16" fill="#1B1C16"/>
+            <g fill="none" stroke="#E8772E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 70V62h8M136 70V62h-8M64 108v8h8M136 108v8h-8"/></g>
+            <g fill="none" stroke="#F3E8D2" stroke-width="7" stroke-linecap="round"><path d="M76 92q9 -12 18 0"/><path d="M106 92q9 -12 18 0"/></g>
+            <rect x="86" y="144" width="28" height="10" fill="#8B6B43"/><rect x="52" y="152" width="96" height="70" rx="14" fill="#6B7559"/>
+            <rect x="64" y="164" width="72" height="44" rx="6" fill="#EFE3CC"/><circle cx="72" cy="172" r="2.5" fill="#E8772E"/>
+            <rect x="70" y="181" width="40" height="3.5" rx="1.75" fill="#6B7559"/><rect x="70" y="189" width="52" height="3.5" rx="1.75" fill="#6B7559"/><rect x="70" y="197" width="22" height="3.5" rx="1.75" fill="#E8772E"/>
+            <path d="M52 168q-22 6 -26 28" stroke="#A8834F" stroke-width="9" fill="none" stroke-linecap="round"/><circle cx="26" cy="200" r="8" fill="#5F6A4E"/>
+            <g class="wave"><path d="M148 168q22 -6 30 -28" stroke="#A8834F" stroke-width="9" fill="none" stroke-linecap="round"/><circle cx="178" cy="138" r="8" fill="#5F6A4E"/></g>
+            <rect x="56" y="220" width="88" height="12" rx="4" fill="#8B6B43"/><circle cx="70" cy="238" r="16" fill="#23241E"/><circle cx="70" cy="238" r="6" fill="#5F6A4E"/><circle cx="130" cy="238" r="16" fill="#23241E"/><circle cx="130" cy="238" r="6" fill="#5F6A4E"/>
+          </svg>
+          <div class="bubble-say" data-en="Hi! I'm Mo 👋">أهلاً! أنا مو 👋</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div><b>+60</b><span data-en="features">خاصية</span></div>
+      <div><b>17</b><span data-en="editor tools">أداة تحرير</span></div>
+      <div><b>0</b><span data-en="watermarks">علامة مائية</span></div>
+      <div><b>100%</b><span data-en="free">مجاني</span></div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="block">
+      <h2 data-en="Everything you need, in one small app">كل اللي محتاجه في برنامج واحد خفيف</h2>
+      <p class="lead" data-en="From a quick snip to a full step-by-step guide.">من لقطة سريعة لحد دليل كامل خطوة بخطوة.</p>
+      <div class="grid">
+        <article class="feat"><i>⬚</i><h3 data-en="Smart capture">التقاط ذكي</h3>
+          <p data-en="Region, window, full screen, all monitors, last region and delayed capture. Detects windows and the buttons, panels and page elements inside them. Magnifier and pixel-exact handles.">منطقة، نافذة، الشاشة كاملة، كل الشاشات، آخر منطقة، والتقاط مؤجّل. بيكتشف النوافذ والأزرار والعناصر اللي جواها تلقائياً، مع عدسة تكبير ومقابض دقيقة بالبكسل.</p></article>
+        <article class="feat"><i>⇕</i><h3 data-en="Scrolling capture">صفحات طويلة كاملة</h3>
+          <p data-en="Auto or manual scrolling with smart stitching that keeps sticky headers once — plus a browser extension for pixel-perfect full web pages.">تمرير تلقائي أو يدوي ودمج ذكي بيحافظ على الرأس الثابت مرة واحدة — وإضافة للمتصفح بتلتقط صفحات الويب كاملة بدقة.</p></article>
+        <article class="feat"><i>✎</i><h3 data-en="Powerful editor">محرر قوي</h3>
+          <p data-en="Arrows, shapes, pen, highlighter, text, speech bubbles in 5 styles, step numbers, blur, pixelate, spotlight, magnifier, stamps, crop, rotate and resize — always re-editable.">أسهم، أشكال، قلم، قلم تحديد، نص، فقاعات كلام بـ5 أشكال، ترقيم خطوات، تمويه، بكسلة، إضاءة منطقة، عدسة تكبير، ملصقات، قص، تدوير وتغيير حجم — وتقدر ترجع تعدّل أي وقت.</p></article>
+        <article class="feat"><i>✦</i><h3 data-en="Beautiful effects">مؤثرات جميلة</h3>
+          <p data-en="Frames, soft shadows, rounded corners, torn edges, gradient backdrops and watermarks — make any screenshot presentation-ready.">إطار، ظل ناعم، حواف مستديرة، حافة ممزقة، خلفيات متدرجة وعلامة مائية — أي لقطة تبقى جاهزة للعرض.</p></article>
+        <article class="feat"><i>T</i><h3 data-en="Text recognition (OCR)">استخراج النص (OCR)</h3>
+          <p data-en="Copy Arabic and English text from any capture, offline. Search your whole library by the text inside images.">انسخ النص العربي والإنجليزي من أي لقطة بدون إنترنت، وابحث في مكتبتك كلها بالنص اللي جوه الصور.</p></article>
+        <article class="feat"><i>⛨</i><h3 data-en="Automatic redaction">إخفاء تلقائي للبيانات الحساسة</h3>
+          <p data-en="Emails, phone numbers, bank cards, national IDs, IBANs, API keys and faces get pixelated with one click — free.">البريد، أرقام الهواتف، البطاقات البنكية، الرقم القومي، IBAN، مفاتيح API والوجوه — بتتخفي بضغطة واحدة ومجاناً.</p></article>
+        <article class="feat"><i>●</i><h3 data-en="Video & GIF">فيديو و GIF</h3>
+          <p data-en="Record with system audio, microphone and webcam, highlight clicks, draw on screen while recording, then trim, speed up, merge clips and export MP4, GIF or WebM.">سجّل بصوت النظام والميكروفون والكاميرا، مع إبراز النقرات والرسم على الشاشة أثناء التسجيل، وبعدين قص وسرّع وادمج المقاطع وصدّر MP4 أو GIF أو WebM.</p></article>
+        <article class="feat"><i>☰</i><h3 data-en="Steps recorder & guides">مسجّل الخطوات والأدلة</h3>
+          <p data-en="Every click becomes a step with a marker. Screenmo turns them into a ready guide you export as PDF, Word or HTML.">كل نقرة بتتحول لخطوة عليها علامة، و Screenmo بيعملها دليل جاهز تصدّره PDF أو Word أو HTML.</p></article>
+        <article class="feat"><i>⇪</i><h3 data-en="Share anywhere">شارك في أي مكان</h3>
+          <p data-en="Copy, save as PNG/JPG/WebP/PDF, print, pin on screen, or upload to Imgur, S3, Cloudflare R2, FTP or your own server and get the link instantly.">نسخ، حفظ PNG/JPG/WebP/PDF، طباعة، تثبيت على الشاشة، أو رفع على Imgur و S3 و Cloudflare R2 و FTP أو سيرفرك، والرابط بيتنسخ فوراً.</p></article>
+        <article class="feat"><i>◎</i><h3 data-en="Floating button">زر عائم بقائمة دائرية</h3>
+          <p data-en="A tiny Mo button stays on top; hover it to open a radial menu with the actions you chose. Plus global hotkeys and a tray menu.">زر صغير بوش مو فوق كل النوافذ، تقف عليه تطلع قائمة دائرية بالاختيارات اللي تحددها، بالإضافة لاختصارات الكيبورد وقائمة شريط المهام.</p></article>
+        <article class="feat"><i>▦</i><h3 data-en="Library & workspaces">مكتبة ومساحات عمل</h3>
+          <p data-en="Every capture is saved automatically. Organize by workspace (one per client or project), tags and favorites.">كل لقطة بتتحفظ تلقائي، ونظّمها بمساحات عمل (لكل عميل أو مشروع) ووسوم ومفضلة.</p></article>
+        <article class="feat"><i>📱</i><h3 data-en="Android capture">التقاط من موبايل أندرويد</h3>
+          <p data-en="Connect your phone by USB to grab screenshots and screen recordings with live preview — straight into the editor.">وصّل الموبايل بالكابل والتقط صور وفيديو لشاشته مع معاينة مباشرة — وتفتح في المحرر على طول.</p></article>
+        <article class="feat"><i>📏</i><h3 data-en="Ruler & color picker">مسطرة ومنتقي ألوان</h3>
+          <p data-en="Measure distances and angles in pixels and copy any color on screen — handy for designers.">قِس المسافات والزوايا بالبكسل وانسخ أي لون من الشاشة — مفيدة جداً للمصممين.</p></article>
+        <article class="feat"><i>⟳</i><h3 data-en="Auto-updates">تحديث تلقائي</h3>
+          <p data-en="New versions arrive with one click. Portable version included — no installation needed.">النسخ الجديدة بتوصلك بضغطة واحدة، وفيه نسخة محمولة بدون تثبيت.</p></article>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="showcase">
+      <figure><img src="assets/overlay.webp" alt="" loading="lazy" /><figcaption data-en="Select precisely, then pick what happens next.">حدّد بدقة واختار تعمل إيه بعدها.</figcaption></figure>
+      <figure><img src="assets/library.webp" alt="" loading="lazy" /><figcaption data-en="Your whole history, searchable.">كل لقطاتك في مكان واحد وتقدر تبحث فيها.</figcaption></figure>
+    </section>
+
+    <!-- ARABIC FIRST -->
+    <section id="arabic" class="block arabic">
+      <div class="ar-text">
+        <h2 data-en="Built Arabic-first">عربي من الأساس</h2>
+        <ul>
+          <li data-en="Arabic text in the editor is shaped and ordered correctly, in Cairo, Tajawal, Amiri or Noto Naskh.">النص العربي في المحرر بيطلع موصول ومترتب صح، بخطوط Cairo و Tajawal و Amiri و Noto Naskh.</li>
+          <li data-en="OCR reads Arabic in the right order and understands Arabic-Indic digits.">قراءة النص العربي بالترتيب الصح وبتفهم الأرقام الهندية (١٢٣).</li>
+          <li data-en="The whole interface is right-to-left in Arabic, and left-to-right in English.">الواجهة كلها من اليمين لليسار بالعربي، ومن اليسار لليمين بالإنجليزي.</li>
+          <li data-en="Redaction knows Egyptian national IDs and local phone formats.">الإخفاء التلقائي بيعرف الرقم القومي المصري وأرقام الموبايل المحلية.</li>
+        </ul>
+      </div>
+      <img class="bub-img" src="assets/bubble.png" alt="" loading="lazy" />
+    </section>
+
+    <!-- COMPARE -->
+    <section id="compare" class="block">
+      <h2 data-en="How it compares">مقارنة سريعة</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>Screenmo</th><th data-en="Screenpresso Free">Screenpresso مجاني</th><th data-en="Screenpresso Pro">Screenpresso Pro</th></tr></thead>
+          <tbody>
+            <tr><td data-en="Price">السعر</td><td class="y" data-en="Free">مجاني</td><td data-en="Free">مجاني</td><td>$29.99</td></tr>
+            <tr><td data-en="No watermark on video">فيديو بدون علامة مائية</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="System audio in recordings">صوت النظام في التسجيل</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="OCR (text from images)">استخراج النص OCR</td><td class="y" data-en="✓ Arabic + English">✓ عربي وإنجليزي</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="Automatic redaction">الإخفاء التلقائي للبيانات</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="Proper Arabic text in editor">نص عربي سليم في المحرر</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+            <tr><td data-en="Steps recorder">مسجّل الخطوات</td><td class="y">✓</td><td class="n">✗</td><td class="n">✗</td></tr>
+            <tr><td data-en="Draw on screen while recording">الرسم أثناء التسجيل</td><td class="y">✓</td><td class="n">✗</td><td class="n">✗</td></tr>
+            <tr><td data-en="Document generator (PDF / Word)">مولّد مستندات PDF / Word</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="Android capture">التقاط من أندرويد</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+            <tr><td data-en="Multiple workspaces">مساحات عمل متعددة</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine" data-en="Based on the public Screenpresso pricing page. Screenpresso is a trademark of its owner.">حسب صفحة الأسعار الرسمية لـ Screenpresso. الاسم علامة تجارية لأصحابها.</p>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="block">
+      <h2 data-en="Download Screenmo">حمّل Screenmo</h2>
+      <p class="lead"><span data-en="Latest version:">آخر إصدار:</span> <b id="ver">—</b></p>
+      <div class="dl">
+        <div class="dl-card on">
+          <div class="dl-h"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.4 1.2L21 21v-8.4h-9.6zm0-15.4v7.2H21V3z"/></svg><b>Windows</b></div>
+          <small data-en="Windows 10 and 11 · 64-bit">ويندوز 10 و11 · 64 بت</small>
+          <a class="btn primary" id="dlSetup" href="https://github.com/iegy/smo/releases/latest" data-en="Download installer">تحميل المُثبّت</a>
+          <a class="btn ghost" id="dlPortable" href="https://github.com/iegy/smo/releases/latest" data-en="Portable ZIP (no install)">نسخة محمولة ZIP (بدون تثبيت)</a>
+        </div>
+        <div class="dl-card on">
+          <div class="dl-h"><svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 8h9M8.5 14 4 6.5M15.5 14 11 21.5" stroke="currentColor" stroke-width="2"/></svg><b data-en="Browser extension">إضافة المتصفح</b></div>
+          <small data-en="Chrome · Edge · Brave">كروم · إيدج · بريف</small>
+          <a class="btn primary" id="dlExt" href="https://github.com/iegy/smo/releases/latest" data-en="Download extension">تحميل الإضافة</a>
+          <small class="howto" data-en="Unzip → open chrome://extensions → turn on Developer mode → Load unpacked.">فك الضغط ← افتح chrome://extensions ← فعّل وضع المطور ← Load unpacked.</small>
+        </div>
+        <div class="dl-card soon-card">
+          <div class="dl-h"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.8 1.3 10.3.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.2zM13.9 4.9c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg><b>macOS</b></div>
+          <small data-en="Apple Silicon & Intel">Apple Silicon و Intel</small>
+          <span class="btn disabled" data-en="Coming soon">قريباً</span>
+        </div>
+        <div class="dl-card soon-card">
+          <div class="dl-h"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M17.6 9.5 19.4 6.4a.4.4 0 1 0-.7-.4l-1.8 3.2A11 11 0 0 0 12 8.2c-1.8 0-3.5.4-4.9 1L5.3 6a.4.4 0 1 0-.7.4l1.8 3.1A10 10 0 0 0 1 17.5h22a10 10 0 0 0-5.4-8zM7 14.8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg><b>Android</b></div>
+          <small data-en="Phones & tablets">موبايل وتابلت</small>
+          <span class="btn disabled" data-en="Coming soon">قريباً</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="block faq">
+      <h2 data-en="Questions">أسئلة شائعة</h2>
+      <details><summary data-en="Windows shows “Windows protected your PC”">ويندوز بيقول «Windows protected your PC»</summary>
+        <p data-en="Screenmo isn't code-signed yet. Click “More info” then “Run anyway”. It happens only on the first run.">البرنامج لسه مش موقّع رقمياً. اضغط «More info» وبعدين «Run anyway». ده بيحصل أول مرة بس.</p></details>
+      <details><summary data-en="Print Screen opens the Snipping Tool">زر Print Screen بيفتح أداة القصاصة</summary>
+        <p data-en="Windows 11: Settings → Accessibility → Keyboard → turn off “Use the Print screen key to open screen capture”. Or set another hotkey in Screenmo settings.">في ويندوز 11: الإعدادات ← إمكانية الوصول ← لوحة المفاتيح ← اقفل «استخدام زر Print Screen لفتح أداة القصاصة». أو غيّر الاختصار من إعدادات Screenmo.</p></details>
+      <details><summary data-en="How do I get better Arabic OCR?">إزاي أخلي قراءة النص العربي أدق؟</summary>
+        <p data-en="Settings → OCR & privacy → “Install Arabic” adds Windows’ own Arabic OCR pack. Screenmo also includes an offline engine that works without it.">الإعدادات ← النص والخصوصية ← «تثبيت العربية» بيضيف حزمة القراءة العربية من ويندوز نفسه. والبرنامج فيه كمان محرك مدمج بيشتغل بدون إنترنت.</p></details>
+      <details><summary data-en="Is it really free? Any limits?">هو مجاني فعلاً؟ فيه حدود؟</summary>
+        <p data-en="Yes — every feature, no watermark, no time limit. If it helps you, you can support development below.">أيوه — كل الخصائص، بدون علامة مائية وبدون حد للوقت. ولو البرنامج فادك تقدر تدعم التطوير من تحت.</p></details>
+      <details><summary data-en="Where are my captures saved?">اللقطات بتتحفظ فين؟</summary>
+        <p data-en="In Pictures\Screenmo by default (you can change it). The portable version keeps everything next to Screenmo.exe.">في مجلد الصور\Screenmo افتراضياً وتقدر تغيّره. والنسخة المحمولة بتحفظ كل حاجة جنب Screenmo.exe.</p></details>
+    </section>
+
+    <!-- SUPPORT -->
+    <section id="support" class="support">
+      <div class="sup-card">
+        <div class="sup-h">❤</div>
+        <h2 data-en="Support us so we can keep building">ادعمنا علشان نقدر نستمر في التطوير</h2>
+        <p data-en="Screenmo is free for everyone. A donation helps us ship the Mac and Android versions and keep adding features.">Screenmo مجاني للجميع. تبرعك بيساعدنا نطلع نسخ الماك والأندرويد ونضيف خصائص جديدة.</p>
+        <div class="insta">
+          <span data-en="Donate via InstaPay">تبرع عبر إنستا باي</span>
+          <b id="ipn">01000220606</b>
+          <button class="btn primary" id="copyIp" data-en="Copy number">نسخ الرقم</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><img src="assets/logo.svg" alt="" width="28" height="28" /><b>Screenmo</b></div>
+    <div>© <span id="yr"></span> Mohammed Hussein · <a href="https://iegy.net" target="_blank" rel="noopener">iegy.net</a></div>
+    <div class="small" data-en="Made in Cairo with Mo 🤖">صُنع في القاهرة مع مو 🤖</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
